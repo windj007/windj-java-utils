@@ -3,6 +3,8 @@ package com.github.windj.utils.factories;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.github.windj.utils.factories.exceptions.CannotCreateFactory;
+
 public abstract class MetaFactoryBase<T> {
 
 	private Map<String, T>	knownFactories	= new HashMap<String, T>();
