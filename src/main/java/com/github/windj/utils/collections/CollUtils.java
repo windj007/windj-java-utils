@@ -12,10 +12,12 @@ public final class CollUtils {
 	private CollUtils() {
 	}
 
+	@SafeVarargs
 	public static <T> Set<T> constantSet(T... elems) {
 		return Collections.unmodifiableSet(new HashSet<T>(Arrays.asList(elems)));
 	}
 
+	@SafeVarargs
 	public static <T> List<T> listFromValues(T... values) {
 		return new ArrayList<T>(Arrays.asList(values));
 	}
